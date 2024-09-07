@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4F34E7A5-FDC8-A5C9-EF9C-A68F0502088E" name="MC_ITEM_PEDIDO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>E66EBFC0-FC40-359E-2382-78D24282F8D4</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_pedido" id="57104E90-C248-DB26-1497-1A0E0BBA00DC">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do pedido]]></commentInRDBMS>
+<generatorID>5EC76192-6EC8-931A-687F-6F12C8C4090E</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6E016B1-DD29-9B4B-3D1D-FF6DC14FCEFF" referredColumn="A1D241A5-16E5-0AEF-05A6-74EE6AA3DD4D"/>
+</associations>
+</Column>
+<Column name="cd_produto" id="1F043C20-CF3C-3F1E-28DF-7F3F155CC1EB">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto]]></commentInRDBMS>
+<generatorID>F2AFA54C-4CC0-C51D-1AB3-EAAAA66BDB3A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0EA2173B-B4BB-21A7-C071-D528D1F9037C" referredColumn="FA9C7EF1-9E3A-2D81-6709-E42607F6A18C"/>
+</associations>
+</Column>
+<Column name="qt_pedido" id="B900C300-7FF8-607F-A4BF-B2EE21A43821">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantidade de pedidos]]></commentInRDBMS>
+<generatorID>339BC895-D947-3408-7103-757890A220C4</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_unitário" id="0F49E5BD-13B9-03D8-3C85-5AC50969C882">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor unitário]]></commentInRDBMS>
+<generatorID>279F35EF-CD36-3D69-6B79-36533EB8646D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_total_item" id="EE4A0A01-BAB3-627B-8002-48E4997CFCD1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[valor total do item]]></commentInRDBMS>
+<generatorID>C90ECC4F-1740-81A5-A410-5B5D8D5CA74A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5148CA8-E479-DCF6-5BD3-81C565526C6C" name="PK_ITEM_PEDIDO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>33E9424B-D0E2-3FE0-F85C-E122CEF7B83B</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57104E90-C248-DB26-1497-1A0E0BBA00DC"/>
+<colUsage columnID="1F043C20-CF3C-3F1E-28DF-7F3F155CC1EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D916E93-516A-F3C7-446D-691AD534B3B3" name="pertencer">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>18EDDE14-D5A7-F299-A118-3811FACCBDA7</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57104E90-C248-DB26-1497-1A0E0BBA00DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DAB2E954-0741-3ABF-074C-0E2A9FB0C2CA" name="pode ter">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>4F7A58E4-D996-1C79-1B60-96876C59BB3A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F043C20-CF3C-3F1E-28DF-7F3F155CC1EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

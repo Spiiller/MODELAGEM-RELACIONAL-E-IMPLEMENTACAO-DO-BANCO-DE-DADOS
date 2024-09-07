@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="88EB6A17-C684-7960-760F-FD6B4C60DD5C" name="MC_FUNCIONARIO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:30:48 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_func" id="4931E03D-F959-AF75-0EBE-147BB7ED7CA6">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:30:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cpf_func" id="758633CF-FFDF-372E-2311-EAD370948693">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:39:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CPF do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_func" id="5420D7C9-E0A9-9029-7812-4EDD543623A5">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:38:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do funcionário									]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nasc_func" id="E63439B5-ECF8-97C1-1992-9B7FCAE414A9">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:42:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone_func" id="702218E3-BEB6-33D7-D85E-023D6DC65734">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:43:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone com DDD do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_func" id="15BA8F6C-5897-A75C-6364-CAB8704E5400">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-12 21:17:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Endereço de e-mail do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cargo_func" id="EAA56DB8-26A3-ED01-B503-365A03B06DE8">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-12 21:18:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cargo do funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="depto_func" id="A5FC8922-4D84-8D36-999D-51A8298B15C0">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:43:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento em que o funcionário trabalha]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="151CEE2C-1AE2-2EBA-2061-B9FC8FB96C80" name="PK_FUNCIONARIO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:31:11 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>4931E03D-F959-AF75-0EBE-147BB7ED7CA6</newElementsIDs>
+<usedAttributes>
+<attributeRef>4931E03D-F959-AF75-0EBE-147BB7ED7CA6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="42AEDE58-EE60-A9D3-A63B-6F0825E7689A" name="UN_MC_FUNC_CPF">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-19 02:23:41 UTC</createdTime>
+<generatorID>1BD5BE0D-B01C-0547-D9B6-4C59471704E8</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>758633CF-FFDF-372E-2311-EAD370948693</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="753E8DFE-30A0-696B-7DAB-59377A9139A5" name="Arc_2">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:07:28 UTC</createdTime>
+<ownerDesignName>versao_2.0</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<entity>0AEE460C-1A41-3237-87D8-F614D3E60D81</entity>
+<relations>
+<relationID>0461F836-DAF9-5493-1295-4860AE331E79</relationID>
+<relationID>6B411491-A3A9-366E-A1C5-8ABFB16F28D3</relationID>
+<relationID>DFAC8E35-4371-CFEE-60F2-A498422946FC</relationID>
+</relations>
+</Arc>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="categorizar" directorySegmentName="seg_0" id="2ABA6104-4A1D-50C7-DA1E-7A7D2F1AB308">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-12 00:53:09 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<sourcePk>C91D5A90-C877-A653-18BB-E733BD85D658</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>82EADDAD-C386-3551-833F-77C11366423A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A07586E-72CA-48F2-E888-A17B5E335782</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2DD54DB6-F239-4A4A-7342-296E33A189B2" name="MC_CLIENTE">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>E22332BB-C5CD-1E56-D775-8D47B862F167</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="BEC36DBD-951C-15DC-AC0E-24DB83AFF164">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<generatorID>9840BECC-A8B7-7767-D933-EFE861CB54BB</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_cliente" id="0FF61C81-22BE-9B10-219B-15FF410F2941">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 20:40:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Define se o cliente é pessoa física (PF) ou jurídica (PJ)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cliente" id="52D23159-C772-599D-6D5D-9EC35EAA5564">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do cliente]]></commentInRDBMS>
+<generatorID>EB69DB8D-F4A9-726B-431B-98C0F9AB0AC2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login_cliente" id="9E9FC867-F9AA-3BFB-1597-9CBC09C0B697">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail pessoal do cliente que permite o acesso à plataforma]]></commentInRDBMS>
+<generatorID>5A992265-9C6F-F8B8-90FB-EFC8A5B2C6F3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="senha_cliente" id="95821DD5-FFB4-9585-AC16-1E58BE94B867">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Senha pessoal do cliente que permite o acesso à plataforma]]></commentInRDBMS>
+<generatorID>81BA787C-88DA-6226-1ED1-5D27309331C6</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_cliente" id="224C4D40-9F23-8658-4EAD-CE11FC37E559">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail pessoal do cliente]]></commentInRDBMS>
+<generatorID>A95720D4-028E-6393-4C4B-56CDFC5017B2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone_cliente" id="87A664A5-28A8-2CE0-273F-091BB0952A0E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone pessoal do cliente]]></commentInRDBMS>
+<generatorID>AF5B7FA9-CCBC-68A3-20F5-FC3947F314D3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_cliente" id="020E468A-CB96-26AB-99E0-092A8D50BBB7">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do cliente, podendo ser ATIVO ou INATIVO]]></commentInRDBMS>
+<generatorID>8F362A1A-53A7-AD0D-28DC-1AD4B34C5F65</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="uf_cliente" id="D7077768-6083-580D-D81A-6226181E8070">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do UF do Cliente ]]></commentInRDBMS>
+<generatorID>40892BFF-36DB-A403-5BDA-B3A7A8040AEF</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade_cliente" id="55FC3A2B-63E0-5D62-07FB-5F7EA72A6818">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade do Cliente]]></commentInRDBMS>
+<generatorID>7BFAE5A1-6620-628B-EF22-4A267561B833</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="logradouro_cliente" id="DD672684-18B3-99A5-9B5A-0DBFD2DBFDB8">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Logradouro do Cliente]]></commentInRDBMS>
+<generatorID>E8060BA1-B842-6EF8-5FF9-3B48EED886B2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cep_cliente" id="81C55CC9-B123-9FFD-E88F-82C8321A92A3">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CEP do cliente]]></commentInRDBMS>
+<generatorID>0F02E7B4-7F3F-2C58-3135-9EADF31C0D13</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_cliente2" id="671B5CE9-8A3D-F461-7EC3-6BD5407AA850">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 20:42:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Define se é pessoa física (PF) ou jurídica (PJ)]]></commentInRDBMS>
+<generatorID>D86B8906-5672-E64B-CAC4-A3F78FC41428</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AE92A87-2E6E-A65F-875E-64FE4204BF89" name="PK_CLIENTE">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>727714FB-AD49-8A4F-0E06-C380B45119D3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEC36DBD-951C-15DC-AC0E-24DB83AFF164"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

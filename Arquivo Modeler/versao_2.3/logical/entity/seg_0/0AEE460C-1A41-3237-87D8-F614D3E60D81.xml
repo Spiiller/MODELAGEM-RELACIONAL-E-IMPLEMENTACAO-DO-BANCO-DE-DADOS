@@ -1,0 +1,179 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0AEE460C-1A41-3237-87D8-F614D3E60D81" name="MC_SAC_CHAMADO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:28:10 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_chamado" id="C91C2E09-614E-63B0-81AD-597A1EFDB38A">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:28:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de identificador único do SAC]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="AF1FF191-036B-EF32-97F9-228AC6C0EE08">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:43:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<generatorID>17505352-29D3-1280-6112-F4555A54D6E1</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>9840BECC-A8B7-7767-D933-EFE861CB54BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_func" id="7936DC06-E098-A1C4-FB50-5D457A3BCFAF">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:43:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do funcionário]]></commentInRDBMS>
+<generatorID>CAC8FABA-133E-DE36-C75D-236BD501EADC</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>4931E03D-F959-AF75-0EBE-147BB7ED7CA6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_tipo_chamado" id="A2C10B30-CDE4-6EFE-E881-AD12A070962E">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-09 00:27:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do tipo de chamado, indicando sua natureza: Ajuda (A), Reclamação (R) ou Sugestão (S)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_hora_chamado" id="8540DF6E-C72B-FE66-AF39-0639612EEC8C">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:30:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de abertura do chamado]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_chamado" id="9CE79ED3-F1D9-9C3B-880E-A062DF4A434F">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:28:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do chamado]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_retorno_chamado" id="E8AD6C80-67FF-2CB3-2E8C-E23C30AA2723">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:29:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do retorno do chamado pelo funcionário]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_hr_atend" id="3236016C-4243-C81A-CD02-8EBA85EE59E2">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-12 21:35:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do atendimento do chamado]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_status_chamado" id="8544060A-0399-A442-6B99-22AC48314EB3">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:30:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do chamado: ativo (A), inativo (I) ou pendente (P)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="indice_satisfacao" id="C1208CDE-3ECA-3278-FCB3-836B3E3B5765">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:29:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[Índice de satisfação atribuído pelo cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80A4BB63-9099-717C-0BCA-7A0001318239" name="PK_SAC">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:28:36 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C91C2E09-614E-63B0-81AD-597A1EFDB38A</newElementsIDs>
+<usedAttributes>
+<attributeRef>C91C2E09-614E-63B0-81AD-597A1EFDB38A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

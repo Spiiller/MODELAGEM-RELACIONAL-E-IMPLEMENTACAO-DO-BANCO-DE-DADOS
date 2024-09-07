@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="abrir" directorySegmentName="seg_0" id="17505352-29D3-1280-6112-F4555A54D6E1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:43:28 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<sourcePk>727714FB-AD49-8A4F-0E06-C380B45119D3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E22332BB-C5CD-1E56-D775-8D47B862F167</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0AEE460C-1A41-3237-87D8-F614D3E60D81</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

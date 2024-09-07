@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8299F10A-BF79-D485-8F7B-020E34B6DB4D" name="MC_SAC_CHAMADO_AJUDA">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>EB15EB76-F8E4-CCFA-1640-903D6F83DF4F</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_chamado" id="A296CDA2-9A73-7862-A060-2845A5EE28DD">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do chamado]]></commentInRDBMS>
+<generatorID>775576FF-A110-2624-D080-F15955CEB174</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBD5B98C-35A9-7EEA-66E3-F51B0722C8A9" referredColumn="12816C0B-998F-56C3-1160-833E2D01C191"/>
+</associations>
+</Column>
+<Column name="tipo_ajuda" id="E1468580-2A59-EEF6-18C7-49838C339B92">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação do chamado Ajuda, podendo ser: Alteração de dados de compras (AD), Atualização cadastral (AC) ou Financeiro (FN)]]></commentInRDBMS>
+<generatorID>9D47D7B5-9044-3E95-2899-4C68183709E8</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77368006-8313-93E8-0AEE-680B3A7871D8" name="PK_CLASS_AJUDA">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>317EB60C-4680-E311-4806-58AC6555F927</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A296CDA2-9A73-7862-A060-2845A5EE28DD"/>
+<colUsage columnID="E1468580-2A59-EEF6-18C7-49838C339B92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C48D197E-DA87-D382-676C-F8B28D3A84CA" name="MC_SAC_CHAMADO_AJUDA__IDX">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 18:04:50 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>0461F836-DAF9-5493-1295-4860AE331E79</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A296CDA2-9A73-7862-A060-2845A5EE28DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="912C7561-8F71-79A8-FDBE-9FB265A95F55" name="classificar">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>0461F836-DAF9-5493-1295-4860AE331E79</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A296CDA2-9A73-7862-A060-2845A5EE28DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

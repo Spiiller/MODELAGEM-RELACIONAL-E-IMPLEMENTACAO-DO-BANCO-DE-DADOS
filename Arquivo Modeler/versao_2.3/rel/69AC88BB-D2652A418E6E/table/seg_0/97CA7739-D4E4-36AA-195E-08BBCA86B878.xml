@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="97CA7739-D4E4-36AA-195E-08BBCA86B878" name="MC_SAC_CHAMADO_SUGESTAO">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>C0EEC18B-448B-875D-C1D7-590B9EF00965</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_chamado" id="EA986A45-99C9-8A7F-9B71-AFF0F2F1EDA0">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do chamado]]></commentInRDBMS>
+<generatorID>02864C85-3CBB-DE1D-B245-DD3C5BB57F29</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70D3CF9E-ADCA-22D5-744A-52910BA993B0" referredColumn="12816C0B-998F-56C3-1160-833E2D01C191"/>
+</associations>
+</Column>
+<Column name="tipo_sugestao" id="A97686B0-2AC4-DF1A-EC2A-EFBA2FB389D3">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria dos chamados definidos como Sugestão, podendo ser: Plataforma (PL), Conteúdos (CT) ou Atendimento (AT)]]></commentInRDBMS>
+<generatorID>2F083188-1FB6-5360-A44A-571C10D786AF</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_sugestao" id="84176C33-0894-9785-66C2-3B8C63A37BA7">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria dos chamados definidos como Sugestão, podendo ser:pendente (P), análise (A) ou implementada (I)]]></commentInRDBMS>
+<generatorID>72AAF11A-9EE3-5BB5-0659-AD2D43D6BB3E</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8074171-8692-0441-B10A-BA4882554276" name="PK_CLASS_SUGESTAO">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>845B29C4-15FC-F746-8161-55A64A2B9D9B</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA986A45-99C9-8A7F-9B71-AFF0F2F1EDA0"/>
+<colUsage columnID="A97686B0-2AC4-DF1A-EC2A-EFBA2FB389D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97A7C382-104D-DEA9-3EA7-052D156D5327" name="MC_SAC_CHAMADO_SUGESTAO__IDX">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 18:04:50 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DFAC8E35-4371-CFEE-60F2-A498422946FC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="EA986A45-99C9-8A7F-9B71-AFF0F2F1EDA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="21566D09-08BA-FEA5-F208-165100A6D387" name="classificarv3">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>DFAC8E35-4371-CFEE-60F2-A498422946FC</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA986A45-99C9-8A7F-9B71-AFF0F2F1EDA0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

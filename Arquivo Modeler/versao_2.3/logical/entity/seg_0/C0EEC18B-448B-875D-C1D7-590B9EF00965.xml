@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C0EEC18B-448B-875D-C1D7-590B9EF00965" name="MC_SAC_CHAMADO_SUGESTAO">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 01:21:58 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_chamado" id="02864C85-3CBB-DE1D-B245-DD3C5BB57F29">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:05:07 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do chamado]]></commentInRDBMS>
+<generatorID>DFAC8E35-4371-CFEE-60F2-A498422946FC</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>C91C2E09-614E-63B0-81AD-597A1EFDB38A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_sugestao" id="2F083188-1FB6-5360-A44A-571C10D786AF">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 01:24:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria dos chamados definidos como Sugestão, podendo ser: Plataforma (PL), Conteúdos (CT) ou Atendimento (AT)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_sugestao" id="72AAF11A-9EE3-5BB5-0659-AD2D43D6BB3E">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 01:22:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Categoria dos chamados definidos como Sugestão, podendo ser:pendente (P), análise (A) ou implementada (I)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="845B29C4-15FC-F746-8161-55A64A2B9D9B" name="PK_CLASS_SUGESTAO">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:05:21 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>DFAC8E35-4371-CFEE-60F2-A498422946FC,2F083188-1FB6-5360-A44A-571C10D786AF</newElementsIDs>
+<usedAttributes>
+<attributeRef>02864C85-3CBB-DE1D-B245-DD3C5BB57F29</attributeRef>
+<attributeRef>2F083188-1FB6-5360-A44A-571C10D786AF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

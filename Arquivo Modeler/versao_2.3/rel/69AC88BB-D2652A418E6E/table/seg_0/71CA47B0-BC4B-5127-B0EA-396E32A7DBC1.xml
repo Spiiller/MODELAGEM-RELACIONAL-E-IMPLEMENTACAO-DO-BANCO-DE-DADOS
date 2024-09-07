@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="71CA47B0-BC4B-5127-B0EA-396E32A7DBC1" name="MC_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>2A07586E-72CA-48F2-E888-A17B5E335782</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_produto" id="FA9C7EF1-9E3A-2D81-6709-E42607F6A18C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto]]></commentInRDBMS>
+<generatorID>A7AFE28B-63EA-C395-E9D2-EB60A29BF070</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>sequence_cd_produto</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="cd_categoria" id="80116225-5A84-5729-92D4-5CA2A00B0ACD">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>0EDB6C4B-529C-1C33-0ACB-B848D1EAB33D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22198C49-0952-4585-07CA-54C3AE3CC5B8" referredColumn="3C4B3D81-1107-AD0E-B0D1-2626A59E8783"/>
+</associations>
+</Column>
+<Column name="desc_produto" id="95B6C04F-6363-D90F-466F-4BAA3F9D3F6E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome comum utilizado durante a comercialização do produto]]></commentInRDBMS>
+<generatorID>A97AC00E-68D6-F0E8-52D3-F1D77B808456</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc_completa" id="EF783601-FDB3-F7D4-7023-6184F3370790">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição com detalhamento do produto comercializado]]></commentInRDBMS>
+<generatorID>194931AC-590D-5F47-3C2F-9B8F8990E454</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_status_produto" id="40E6D35B-A1A5-B558-FC09-EBBE1C2F8FAD">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Produto pode estar ativo (A), inativo (I) ou em prospecção (P)]]></commentInRDBMS>
+<generatorID>6F8243BB-1414-86CB-7B39-4709363AE16A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="preco_produto" id="31BA488F-02B7-143F-D094-D34A01C0BD32">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço unitário atual do produto]]></commentInRDBMS>
+<generatorID>C3FD69B0-9070-53E8-3CE7-A5D250810E37</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_barras" id="D8433A96-86BA-1F11-71F2-D73E8452099D">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de barras do produto padrão EAN13]]></commentInRDBMS>
+<generatorID>7FF1CF34-6548-F464-757A-9302C2651BBB</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AF829BF8-B8D5-93E2-AB0F-A2619E6529E1" name="PK_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>23B963A2-22D2-369E-9C6E-5C47540C8903</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA9C7EF1-9E3A-2D81-6709-E42607F6A18C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47225CF7-761B-5613-8DBE-0F097A34BF7F" name="UN_MC_PRODUTO_DESC">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 20:56:04 UTC</createdTime>
+<generatorID>EE71A096-4595-79C4-2290-D976CB87321B</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95B6C04F-6363-D90F-466F-4BAA3F9D3F6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BFCB11A-6753-808B-7FB8-5B407F70B96C" name="categorizar">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>2ABA6104-4A1D-50C7-DA1E-7A7D2F1AB308</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80116225-5A84-5729-92D4-5CA2A00B0ACD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

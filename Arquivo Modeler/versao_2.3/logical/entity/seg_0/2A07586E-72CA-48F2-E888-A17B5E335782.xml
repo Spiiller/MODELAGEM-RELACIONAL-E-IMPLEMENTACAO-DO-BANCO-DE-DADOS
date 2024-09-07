@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2A07586E-72CA-48F2-E888-A17B5E335782" name="MC_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:20:50 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_produto" id="A7AFE28B-63EA-C395-E9D2-EB60A29BF070">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:21:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_categoria" id="0EDB6C4B-529C-1C33-0ACB-B848D1EAB33D">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-12 00:53:09 UTC</createdTime>
+<generatorID>2ABA6104-4A1D-50C7-DA1E-7A7D2F1AB308</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>529476E6-F115-AC78-6752-C452268224F2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_produto" id="A97AC00E-68D6-F0E8-52D3-F1D77B808456">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:21:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome comum utilizado durante a comercialização do produto]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_completa" id="194931AC-590D-5F47-3C2F-9B8F8990E454">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:21:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição com detalhamento do produto comercializado]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sg_status_produto" id="6F8243BB-1414-86CB-7B39-4709363AE16A">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:21:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Produto pode estar ativo (A), inativo (I) ou em prospecção (P)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="preco_produto" id="C3FD69B0-9070-53E8-3CE7-A5D250810E37">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:22:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[Preço unitário atual do produto]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,5,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_barras" id="7FF1CF34-6548-F464-757A-9302C2651BBB">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:22:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código de barras do produto padrão EAN13]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="23B963A2-22D2-369E-9C6E-5C47540C8903" name="PK_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:21:14 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>A7AFE28B-63EA-C395-E9D2-EB60A29BF070</newElementsIDs>
+<usedAttributes>
+<attributeRef>A7AFE28B-63EA-C395-E9D2-EB60A29BF070</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EE71A096-4595-79C4-2290-D976CB87321B" name="UN_MC_PRODUTO_DESC">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-19 02:23:41 UTC</createdTime>
+<generatorID>42050EB0-E89C-DF13-B253-CB4120FF847D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A97AC00E-68D6-F0E8-52D3-F1D77B808456</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

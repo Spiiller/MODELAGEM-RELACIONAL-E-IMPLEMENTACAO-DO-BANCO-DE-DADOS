@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38D6C29F-353C-3E0A-B2FE-00CCAD6A0A70" name="MC_PEDIDO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:48:17 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_pedido" id="CE94DEC8-6308-A8B5-EE6F-A0B77E80BFA1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:50:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do pedido]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="CD005213-04A6-48E5-1186-C2AC66AA2A8E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:50:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<generatorID>FA1C830C-F54F-E200-B32B-11955F12D2A5</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>9840BECC-A8B7-7767-D933-EFE861CB54BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_pedido" id="D465BE3E-2370-3C55-460B-620F19549027">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:56:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data em que o pedido foi realizado]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_total_pedido" id="657C7641-F648-2A6C-67D7-737E09972528">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:57:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Valor total do pedido]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="08F56C85-A9CC-584B-AD5D-6E71142D0FC1" name="PK_PEDIDO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:50:06 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>CE94DEC8-6308-A8B5-EE6F-A0B77E80BFA1</newElementsIDs>
+<usedAttributes>
+<attributeRef>CE94DEC8-6308-A8B5-EE6F-A0B77E80BFA1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

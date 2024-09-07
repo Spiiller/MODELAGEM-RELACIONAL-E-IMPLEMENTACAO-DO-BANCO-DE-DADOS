@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="912D7141-272F-84F7-7572-AFA57E993DCA">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:41:02 UTC</createdTime>
+<ownerDesignName>trabalho_melhores_compras</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

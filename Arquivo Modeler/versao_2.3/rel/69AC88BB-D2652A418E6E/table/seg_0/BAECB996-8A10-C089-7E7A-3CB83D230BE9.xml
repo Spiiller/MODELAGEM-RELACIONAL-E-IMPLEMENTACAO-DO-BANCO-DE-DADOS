@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAECB996-8A10-C089-7E7A-3CB83D230BE9" name="MC_VIDEO_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>9B5A032B-333F-78C6-4446-421BC7C129D0</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_video" id="FE8222C0-179F-98D6-8BB4-9F50FDED186E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do vídeo]]></commentInRDBMS>
+<generatorID>EA882D00-DB9D-CAB4-A42F-A9E19DDF8E3D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_class" id="6324AC25-FFFA-484A-8DE0-BECAF7AC7495">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da classificação]]></commentInRDBMS>
+<generatorID>A1A0B1D6-7E39-1C38-2F91-44E548AE5EC2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9061FADB-2C9E-C2CC-A1D0-B7EF3665AEA7" referredColumn="207653ED-7CD6-45E6-5248-EBCB3727C098"/>
+</associations>
+</Column>
+<Column name="cd_produto" id="0C098BC8-D3DD-241F-A9B5-771D5E055912">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto]]></commentInRDBMS>
+<generatorID>8CB0E625-7349-D590-0D78-90590C3784D4</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFBADFB1-D1F4-450C-83E2-DCC7D542143C" referredColumn="FA9C7EF1-9E3A-2D81-6709-E42607F6A18C"/>
+</associations>
+</Column>
+<Column name="dt_cadastro_video" id="6656084A-C14F-1AA4-53DF-24A4A2947AA8">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do cadastro do vídeo]]></commentInRDBMS>
+<generatorID>677D30A2-5807-4174-555C-DF11E9FB81AE</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_video" id="6C536F18-6EF2-3DA1-7B16-5EB44F0A584C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do vídeo]]></commentInRDBMS>
+<generatorID>D05CF9F3-696D-5387-C777-5606FE744241</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6B569F8-170D-A2F4-A3C5-056CBDA596E5" name="PK_VIDEO_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>2E6BD251-98EE-59B1-9007-D51C5356D2A0</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE8222C0-179F-98D6-8BB4-9F50FDED186E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F856D070-76D1-DB50-DD55-A0EC730287ED" name="classificarv1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>0C42E02E-4145-2DF6-DE1E-FD9833CBC8CE</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6324AC25-FFFA-484A-8DE0-BECAF7AC7495"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BED0A82C-6F70-DC99-8D0E-D54E976C801B" name="possuir">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>A5E28F34-6DFE-B538-BE97-48784DECC29E</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C098BC8-D3DD-241F-A9B5-771D5E055912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_MC_VDO_PDT_STS_VDO" directorySegmentName="seg_0" id="1664D6E6-3F3F-9B76-BD0D-DA35BAE3255D">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 21:47:58 UTC</createdTime>
+<ownerDesignName>versao_1.8</ownerDesignName>
+<rule><![CDATA[status_video = 'A' OR status_video = 'I']]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

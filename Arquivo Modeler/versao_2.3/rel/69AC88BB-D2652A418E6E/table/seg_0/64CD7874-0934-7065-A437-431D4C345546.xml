@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64CD7874-0934-7065-A437-431D4C345546" name="MC_CLIENTE_PF">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>378D7726-426A-4BE4-F33C-C65680974BF6</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="73DEBFB1-EC1E-0FEA-A3F3-900DCAD1BE0D">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 18:26:37 UTC</createdTime>
+<generatorID>205D192D-667B-89CD-69E2-B698D2CF46B7</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38D3BE1B-F9A7-6883-0CDF-7A1DD25F82B7" referredColumn="BEC36DBD-951C-15DC-AC0E-24DB83AFF164"/>
+</associations>
+</Column>
+<Column name="nr_cpf" id="9CFCB908-BFAA-E239-F149-3B8B89D6B212">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CPF do cliente pessoa física]]></commentInRDBMS>
+<generatorID>744D9B7F-756F-F684-6FDA-DA0BF9C35BA0</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="D76095ED-3769-B61B-69BD-57BB7BB64AF4">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do cliente]]></commentInRDBMS>
+<generatorID>B2F736BD-D0C9-3CAB-6E6B-7E81DF741131</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo_bio_cliente" id="29599183-5941-FC93-8383-CDA3BBAC7092">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sexo biológico do cliente]]></commentInRDBMS>
+<generatorID>93F6E22E-2812-53DB-50FF-FACE450D8D29</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gn_nascimento" id="4C761452-40AB-3DB9-F852-98D1D891B93F">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Gênero de nascimento do cliente]]></commentInRDBMS>
+<generatorID>4F6BB807-D3B0-43D7-874A-FEE817B006FB</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F2B8DC9C-2E30-29B8-D96C-301FE58A2F1F" name="PK_CLIENTE_PF">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>7899CDF4-B221-9D86-6775-11794719072A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73DEBFB1-EC1E-0FEA-A3F3-900DCAD1BE0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA15BAF2-81F7-FDE8-9023-18C312A837E9" name="pode_ser">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>8A7E3FE8-6E30-682D-A1B6-F622C5EA11F3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73DEBFB1-EC1E-0FEA-A3F3-900DCAD1BE0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

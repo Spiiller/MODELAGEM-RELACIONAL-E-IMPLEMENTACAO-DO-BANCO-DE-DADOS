@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9061FADB-2C9E-C2CC-A1D0-B7EF3665AEA7" containerWithKeyObject="BAECB996-8A10-C089-7E7A-3CB83D230BE9" localFKIndex="F856D070-76D1-DB50-DD55-A0EC730287ED" name="classificarv1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>0C42E02E-4145-2DF6-DE1E-FD9833CBC8CE</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<referredTableLongName>MC_CLASS_VIDEO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C2288181-92D1-6561-E910-45C5B4242B01</referredTableID>
+<keyObject>7ECE5E5E-7451-A833-63E6-68D798D09F67</keyObject>
+<referredKeyID>7ECE5E5E-7451-A833-63E6-68D798D09F67</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_class</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

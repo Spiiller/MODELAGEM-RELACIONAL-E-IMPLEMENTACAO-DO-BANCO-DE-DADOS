@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E22332BB-C5CD-1E56-D775-8D47B862F167" name="MC_CLIENTE">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:51:27 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="9840BECC-A8B7-7767-D933-EFE861CB54BB">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:51:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_cliente" id="D86B8906-5672-E64B-CAC4-A3F78FC41428">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 20:41:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Define se é pessoa física (PF) ou jurídica (PJ)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cliente" id="EB69DB8D-F4A9-726B-431B-98C0F9AB0AC2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:51:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="login_cliente" id="5A992265-9C6F-F8B8-90FB-EFC8A5B2C6F3">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:51:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail pessoal do cliente que permite o acesso à plataforma]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="senha_cliente" id="81BA787C-88DA-6226-1ED1-5D27309331C6">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:52:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Senha pessoal do cliente que permite o acesso à plataforma]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_cliente" id="A95720D4-028E-6393-4C4B-56CDFC5017B2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:54:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[E-mail pessoal do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefone_cliente" id="AF5B7FA9-CCBC-68A3-20F5-FC3947F314D3">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:54:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone pessoal do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_cliente" id="8F362A1A-53A7-AD0D-28DC-1AD4B34C5F65">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:53:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do cliente, podendo ser ATIVO ou INATIVO]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="uf_cliente" id="40892BFF-36DB-A403-5BDA-B3A7A8040AEF">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:52:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sigla do UF do Cliente ]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cidade_cliente" id="7BFAE5A1-6620-628B-EF22-4A267561B833">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:53:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome da cidade do Cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="logradouro_cliente" id="E8060BA1-B842-6EF8-5FF9-3B48EED886B2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:53:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Logradouro do Cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cep_cliente" id="0F02E7B4-7F3F-2C58-3135-9EADF31C0D13">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:53:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CEP do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="727714FB-AD49-8A4F-0E06-C380B45119D3" name="PK_CLIENTE">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-07 23:55:04 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9840BECC-A8B7-7767-D933-EFE861CB54BB</newElementsIDs>
+<usedAttributes>
+<attributeRef>9840BECC-A8B7-7767-D933-EFE861CB54BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7AABC70-0009-BC0B-79E3-3D3553EA6237" name="MC_CTG_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>82EADDAD-C386-3551-833F-77C11366423A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_categoria" id="3C4B3D81-1107-AD0E-B0D1-2626A59E8783">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da categoria]]></commentInRDBMS>
+<generatorID>529476E6-F115-AC78-6752-C452268224F2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>sqc_ctg_produto</autoIncrementSequenceName>
+<autoIncrementGenerateTrigger>false</autoIncrementGenerateTrigger>
+</Column>
+<Column name="desc_categoria" id="AC76F84F-5F51-72BC-558F-BF4B44912B42">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição da categoria]]></commentInRDBMS>
+<generatorID>A9B8C44A-1EDA-EFCA-5742-396A97413FBA</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_categoria" id="763C2D0C-1D17-D5B9-EE12-B0C91A1A9CE1">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da categoria]]></commentInRDBMS>
+<generatorID>AEAD5642-8341-C94E-E102-61CC14F6F0E4</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_inicial" id="C2F0D8A9-6FE2-229F-D628-159D3773B303">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do início]]></commentInRDBMS>
+<generatorID>2C3CC013-C599-08B0-61E5-A901E42E22B1</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_termino" id="FE562CD8-21FB-74F8-AF75-7F0ED23E7D42">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do término]]></commentInRDBMS>
+<generatorID>C7FA71BD-B772-9CCB-E6B5-6A5DEBAFA4D2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF5C15BA-AF6C-3AF0-AF7F-E2EBC40C84AA" name="PK_CTG_PRODUTO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>C91D5A90-C877-A653-18BB-E733BD85D658</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C4B3D81-1107-AD0E-B0D1-2626A59E8783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FCDB9690-846F-6B58-5AD0-C2FDF683FBB4" name="UN_MC_CTG_PRODUTO_DESC">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 21:29:00 UTC</createdTime>
+<comment><![CDATA[A descrição da categoria do produto deve ser única]]></comment>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC76F84F-5F51-72BC-558F-BF4B44912B42"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_MC_CTG_PRODUTO_STATUS" directorySegmentName="seg_0" id="D15AD570-0197-E7E6-89BA-E0F975039D22">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 21:35:23 UTC</createdTime>
+<ownerDesignName>versao_1.8</ownerDesignName>
+<rule><![CDATA[status_categoria = 'A' OR dt_termino IS NOT NULL]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

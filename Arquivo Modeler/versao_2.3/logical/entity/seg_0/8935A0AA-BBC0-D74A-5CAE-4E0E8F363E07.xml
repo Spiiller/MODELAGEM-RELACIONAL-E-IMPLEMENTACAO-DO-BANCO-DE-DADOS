@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8935A0AA-BBC0-D74A-5CAE-4E0E8F363E07" name="MC_VISUALIZACAO_VIDEO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:33:04 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_visualizacao" id="986C7394-B819-6057-E92A-70A293A1630A">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:33:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da visualização]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_video" id="E703B79F-1E67-5DE8-7C1D-5322EA016665">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-12 01:02:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do vídeo]]></commentInRDBMS>
+<generatorID>7E9A084D-1C8D-B224-A163-048E72F3301D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>EA882D00-DB9D-CAB4-A42F-A9E19DDF8E3D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_visualizacao" id="85036782-C286-5FBE-6E01-8B2E9163F8E5">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:33:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de visualização]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0751F85C-B8E5-69AA-F325-CC74FAA41BDD" name="PK_VSZ_VIDEO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:33:24 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>986C7394-B819-6057-E92A-70A293A1630A</newElementsIDs>
+<usedAttributes>
+<attributeRef>986C7394-B819-6057-E92A-70A293A1630A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

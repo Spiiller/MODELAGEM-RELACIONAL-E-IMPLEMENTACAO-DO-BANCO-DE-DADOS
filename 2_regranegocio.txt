@@ -1,0 +1,5 @@
+Regra de Negócio criada pelo grupo
+
+RN24 - Todo chamado deve ser classificado entre Ajuda ('A'), Reclamação ('R') ou Sugestão ('S'). Cada uma dessas classificações possui subclassificações, que permitirão que os chamados sejam categorizados de forma mais eficiente para os funcionários da Melhore Compras realizarem os atendimentos. Todo chamado deve, obrigatoriamente, ser categorizado conforme os parâmetros pertinentes, sendo que o chamado classificado como Ajuda receberá as categorias: Alteração de dados de compras (AD), Atualização cadastral (AC) e Financeiro (FN); a opção Reclamação receberá as categorias: Suporte técnico (N1) e Suporte especializado (N2), além de poder ser categorizado conforme prioridade de atendimento (Baixa 'B', Média 'M', Alta 'A' ou Urgente 'U'); e, por fim, a opção Sugestão receberá as categorias: Plataforma (PL), Conteúdos (CT) e Atendimento (AT), além do status da Sugestão, que pode ser definido como: pendente (P), em análise (A) ou implementada (I).
+
+A entidade pai escolhida foi MC_SAC_CHAMADO e as novas entidades criadas foram MC_CHAMADO_AJUDA, MC_CHAMADO_RECLAMACAO e MC_CHAMADO_SUGESTAO

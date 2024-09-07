@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="70D3CF9E-ADCA-22D5-744A-52910BA993B0" containerWithKeyObject="97CA7739-D4E4-36AA-195E-08BBCA86B878" localFKIndex="21566D09-08BA-FEA5-F208-165100A6D387" name="classificarv3">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<generatorID>DFAC8E35-4371-CFEE-60F2-A498422946FC</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<referredTableLongName>MC_SAC_CHAMADO</referredTableLongName>
+<arc>E608B58C-78A2-E854-6DD4-F2160F1929CA</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0C2A2D93-5096-5248-F2F6-EBD2F146607A</referredTableID>
+<keyObject>62621002-39C6-3898-015D-1FA28F355F7D</keyObject>
+<referredKeyID>62621002-39C6-3898-015D-1FA28F355F7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_chamado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>tipo_sugestao</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

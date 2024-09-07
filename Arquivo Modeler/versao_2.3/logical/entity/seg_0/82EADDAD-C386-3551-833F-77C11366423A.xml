@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82EADDAD-C386-3551-833F-77C11366423A" name="MC_CTG_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:23:32 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_categoria" id="529476E6-F115-AC78-6752-C452268224F2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:23:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da categoria]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="desc_categoria" id="A9B8C44A-1EDA-EFCA-5742-396A97413FBA">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:45:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição da categoria]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_categoria" id="AEAD5642-8341-C94E-E102-61CC14F6F0E4">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:24:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da categoria]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_inicial" id="2C3CC013-C599-08B0-61E5-A901E42E22B1">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:24:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do início]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_termino" id="C7FA71BD-B772-9CCB-E6B5-6A5DEBAFA4D2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:24:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do término]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C91D5A90-C877-A653-18BB-E733BD85D658" name="PK_CTG_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:24:01 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>529476E6-F115-AC78-6752-C452268224F2</newElementsIDs>
+<usedAttributes>
+<attributeRef>529476E6-F115-AC78-6752-C452268224F2</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E996160F-861C-61BE-49FD-B245BD4512C7" name="UN_MC_CTG_PRODUTO_DESC">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-19 02:23:41 UTC</createdTime>
+<comment><![CDATA[A descrição da categoria do produto deve ser única]]></comment>
+<generatorID>FCDB9690-846F-6B58-5AD0-C2FDF683FBB4</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>A9B8C44A-1EDA-EFCA-5742-396A97413FBA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

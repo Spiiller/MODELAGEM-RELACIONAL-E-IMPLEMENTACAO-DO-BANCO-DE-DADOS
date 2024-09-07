@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="classificarv4" directorySegmentName="seg_0" id="6B411491-A3A9-366E-A1C5-8ABFB16F28D3">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:04:37 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<sourcePk>80A4BB63-9099-717C-0BCA-7A0001318239</sourcePk>
+<arc>753E8DFE-30A0-696B-7DAB-59377A9139A5</arc>
+<dominantRole>0AEE460C-1A41-3237-87D8-F614D3E60D81</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0AEE460C-1A41-3237-87D8-F614D3E60D81</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>9A80E857-506C-600F-453B-56608801EB0D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

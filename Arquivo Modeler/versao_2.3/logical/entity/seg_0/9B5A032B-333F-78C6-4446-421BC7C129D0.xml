@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B5A032B-333F-78C6-4446-421BC7C129D0" name="MC_VIDEO_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:25:15 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_video" id="EA882D00-DB9D-CAB4-A42F-A9E19DDF8E3D">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:25:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do vídeo]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_class" id="A1A0B1D6-7E39-1C38-2F91-44E548AE5EC2">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-12 00:59:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da classificação]]></commentInRDBMS>
+<generatorID>0C42E02E-4145-2DF6-DE1E-FD9833CBC8CE</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>F3E344A9-6140-74FF-93D1-E1D3609A38F7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_produto" id="8CB0E625-7349-D590-0D78-90590C3784D4">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:23:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do produto]]></commentInRDBMS>
+<generatorID>A5E28F34-6DFE-B538-BE97-48784DECC29E</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>A7AFE28B-63EA-C395-E9D2-EB60A29BF070</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_cadastro_video" id="677D30A2-5807-4174-555C-DF11E9FB81AE">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:26:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do cadastro do vídeo]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_video" id="D05CF9F3-696D-5387-C777-5606FE744241">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:26:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do vídeo]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2E6BD251-98EE-59B1-9007-D51C5356D2A0" name="PK_VIDEO_PRODUTO">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:26:11 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>EA882D00-DB9D-CAB4-A42F-A9E19DDF8E3D</newElementsIDs>
+<usedAttributes>
+<attributeRef>EA882D00-DB9D-CAB4-A42F-A9E19DDF8E3D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

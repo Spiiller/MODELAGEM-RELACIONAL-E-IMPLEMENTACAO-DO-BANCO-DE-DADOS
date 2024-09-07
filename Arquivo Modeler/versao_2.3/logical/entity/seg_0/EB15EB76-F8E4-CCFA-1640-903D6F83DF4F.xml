@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB15EB76-F8E4-CCFA-1640-903D6F83DF4F" name="MC_SAC_CHAMADO_AJUDA">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 01:03:47 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_chamado" id="775576FF-A110-2624-D080-F15955CEB174">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:02:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do chamado]]></commentInRDBMS>
+<generatorID>0461F836-DAF9-5493-1295-4860AE331E79</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>C91C2E09-614E-63B0-81AD-597A1EFDB38A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_ajuda" id="9D47D7B5-9044-3E95-2899-4C68183709E8">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 01:04:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Classificação do chamado Ajuda, podendo ser: Alteração de dados de compras (AD), Atualização cadastral (AC) ou Financeiro (FN)]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="317EB60C-4680-E311-4806-58AC6555F927" name="PK_CLASS_AJUDA">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:04:05 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>0461F836-DAF9-5493-1295-4860AE331E79,9D47D7B5-9044-3E95-2899-4C68183709E8</newElementsIDs>
+<usedAttributes>
+<attributeRef>775576FF-A110-2624-D080-F15955CEB174</attributeRef>
+<attributeRef>9D47D7B5-9044-3E95-2899-4C68183709E8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

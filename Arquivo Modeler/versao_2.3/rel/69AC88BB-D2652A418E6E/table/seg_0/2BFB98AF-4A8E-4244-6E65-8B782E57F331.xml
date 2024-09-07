@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2BFB98AF-4A8E-4244-6E65-8B782E57F331" name="MC_VISUALIZACAO_VIDEO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>8935A0AA-BBC0-D74A-5CAE-4E0E8F363E07</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_visualizacao" id="49A362C3-E9DF-4B6A-F665-3F4E02601D6A">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código da visualização]]></commentInRDBMS>
+<generatorID>986C7394-B819-6057-E92A-70A293A1630A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_video" id="5410FF20-9084-FEDE-8611-B6EC5BB963C2">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do vídeo]]></commentInRDBMS>
+<generatorID>E703B79F-1E67-5DE8-7C1D-5322EA016665</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D6AE0A9-F552-36CF-11BA-134861119944" referredColumn="FE8222C0-179F-98D6-8BB4-9F50FDED186E"/>
+</associations>
+</Column>
+<Column name="dt_visualizacao" id="FF40E172-4546-8E54-5BE7-3B2516181852">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de visualização]]></commentInRDBMS>
+<generatorID>85036782-C286-5FBE-6E01-8B2E9163F8E5</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08CF2A6F-B68E-5881-AFC4-F9DDE342DBAA" name="PK_VSZ_VIDEO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>0751F85C-B8E5-69AA-F325-CC74FAA41BDD</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49A362C3-E9DF-4B6A-F665-3F4E02601D6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF94D13C-AFC1-E7B4-FD8E-9064970A50AA" name="visualizar">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>7E9A084D-1C8D-B224-A163-048E72F3301D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5410FF20-9084-FEDE-8611-B6EC5BB963C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

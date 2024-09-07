@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="E608B58C-78A2-E854-6DD4-F2160F1929CA" name="Arc_2">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-16 16:20:43 UTC</createdTime>
+<ownerDesignName>versao_2.0</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>0C2A2D93-5096-5248-F2F6-EBD2F146607A</table>
+<discriminatorColumn>A6E4DB00-7FB4-3D3B-899D-561919C4F757</discriminatorColumn>
+<fkeys>
+<fkeyID>FBD5B98C-35A9-7EEA-66E3-F51B0722C8A9</fkeyID>
+<fkeyID>6D14A768-D164-A7EA-08E4-91AB102CFEE3</fkeyID>
+<fkeyID>70D3CF9E-ADCA-22D5-744A-52910BA993B0</fkeyID>
+</fkeys>
+</FKArc>

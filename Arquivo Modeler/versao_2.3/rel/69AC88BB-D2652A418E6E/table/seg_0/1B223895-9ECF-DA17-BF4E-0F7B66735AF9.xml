@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B223895-9ECF-DA17-BF4E-0F7B66735AF9" name="MC_FUNCIONARIO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>88EB6A17-C684-7960-760F-FD6B4C60DD5C</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_func" id="E5A7095F-6FC9-3754-34D6-B18D5A1A9815">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do funcionário]]></commentInRDBMS>
+<generatorID>4931E03D-F959-AF75-0EBE-147BB7ED7CA6</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_func" id="DB071CC4-4065-8EAD-CA90-4F4863E3ADD4">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome completo do funcionário									]]></commentInRDBMS>
+<generatorID>5420D7C9-E0A9-9029-7812-4EDD543623A5</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cpf_func" id="4470C3D7-08E8-0C4F-13CC-95A0089B4EA2">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de CPF do funcionário]]></commentInRDBMS>
+<generatorID>758633CF-FFDF-372E-2311-EAD370948693</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nasc_func" id="33937227-07C0-7A0A-A800-4585F392D87A">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do funcionário]]></commentInRDBMS>
+<generatorID>E63439B5-ECF8-97C1-1992-9B7FCAE414A9</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone_func" id="1638E465-F734-7BE6-DA0A-38E4A3AF1D6C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Telefone com DDD do funcionário]]></commentInRDBMS>
+<generatorID>702218E3-BEB6-33D7-D85E-023D6DC65734</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>13</dataTypePrecision>
+<ownDataTypeParameters>,13,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email_func" id="FFD0A4E0-5687-0718-14CA-4FF08A2EE2E6">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Endereço de e-mail do funcionário]]></commentInRDBMS>
+<generatorID>15BA8F6C-5897-A75C-6364-CAB8704E5400</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo_func" id="4B8674BF-CD6A-94E3-A734-AC9ED8095C7C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cargo do funcionário]]></commentInRDBMS>
+<generatorID>EAA56DB8-26A3-ED01-B503-365A03B06DE8</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24</dataTypeSize>
+<ownDataTypeParameters>24,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depto_func" id="B6FC50A5-FAB2-E70F-AA3D-9C90DE44976D">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento em que o funcionário trabalha]]></commentInRDBMS>
+<generatorID>A5FC8922-4D84-8D36-999D-51A8298B15C0</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="122381DF-12EA-67EA-D6E2-168DDB7FB8D3" name="PK_FUNCIONARIO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>151CEE2C-1AE2-2EBA-2061-B9FC8FB96C80</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5A7095F-6FC9-3754-34D6-B18D5A1A9815"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFC08035-D0DD-F279-D044-64009C7A011E" name="UN_MC_FUNC_CPF">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 21:10:43 UTC</createdTime>
+<generatorID>42AEDE58-EE60-A9D3-A63B-6F0825E7689A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4470C3D7-08E8-0C4F-13CC-95A0089B4EA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

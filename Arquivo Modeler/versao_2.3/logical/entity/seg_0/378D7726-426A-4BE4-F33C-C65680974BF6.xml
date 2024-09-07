@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="378D7726-426A-4BE4-F33C-C65680974BF6" name="MC_CLIENTE_PF">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:16:26 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="205D192D-667B-89CD-69E2-B698D2CF46B7">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-19 18:13:52 UTC</createdTime>
+<generatorID>8A7E3FE8-6E30-682D-A1B6-F622C5EA11F3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<referedAttribute>9840BECC-A8B7-7767-D933-EFE861CB54BB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf" id="744D9B7F-756F-F684-6FDA-DA0BF9C35BA0">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:16:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CPF do cliente pessoa física]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="B2F736BD-D0C9-3CAB-6E6B-7E81DF741131">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-08 23:31:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de nascimento do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo_bio_cliente" id="93F6E22E-2812-53DB-50FF-FACE450D8D29">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-08 00:16:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[Sexo biológico do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gn_nascimento" id="4F6BB807-D3B0-43D7-874A-FEE817B006FB">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-08 23:35:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Gênero de nascimento do cliente]]></commentInRDBMS>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7899CDF4-B221-9D86-6775-11794719072A" name="PK_CLIENTE_PF">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-11 23:43:51 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>8A7E3FE8-6E30-682D-A1B6-F622C5EA11F3</newElementsIDs>
+<usedAttributes>
+<attributeRef>205D192D-667B-89CD-69E2-B698D2CF46B7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C2A2D93-5096-5248-F2F6-EBD2F146607A" name="MC_SAC_CHAMADO">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>0AEE460C-1A41-3237-87D8-F614D3E60D81</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_chamado" id="12816C0B-998F-56C3-1160-833E2D01C191">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de identificador único do SAC]]></commentInRDBMS>
+<generatorID>C91C2E09-614E-63B0-81AD-597A1EFDB38A</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cliente" id="0BC2D73F-6C68-597A-2EF1-9AF6CAEE27D5">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<generatorID>AF1FF191-036B-EF32-97F9-228AC6C0EE08</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="219EA478-3E43-539A-2E64-418956FB4FB7" referredColumn="BEC36DBD-951C-15DC-AC0E-24DB83AFF164"/>
+</associations>
+</Column>
+<Column name="cd_func" id="160E6D2E-5473-66FC-0B64-906BDBF194D2">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do funcionário]]></commentInRDBMS>
+<generatorID>7936DC06-E098-A1C4-FB50-5D457A3BCFAF</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CEB52D4-C14F-902E-DAA9-616D31A86950" referredColumn="E5A7095F-6FC9-3754-34D6-B18D5A1A9815"/>
+</associations>
+</Column>
+<Column name="dt_hora_chamado" id="0396A335-3A41-10AB-6274-3D7D01787E8F">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora de abertura do chamado]]></commentInRDBMS>
+<generatorID>8540DF6E-C72B-FE66-AF39-0639612EEC8C</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc_chamado" id="E6E8B5C8-CE31-FFC8-64F8-0203E05F76E3">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do chamado]]></commentInRDBMS>
+<generatorID>9CE79ED3-F1D9-9C3B-880E-A062DF4A434F</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc_retorno_chamado" id="252CF3CA-0E52-FBBE-B700-D0BBD64D1481">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descrição detalhada do retorno do chamado pelo funcionário]]></commentInRDBMS>
+<generatorID>E8AD6C80-67FF-2CB3-2E8C-E23C30AA2723</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_tipo_chamado" id="A6E4DB00-7FB4-3D3B-899D-561919C4F757">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do tipo de chamado, indicando sua natureza: Ajuda (A), Reclamação (R) ou Sugestão (S)]]></commentInRDBMS>
+<generatorID>A2C10B30-CDE4-6EFE-E881-AD12A070962E</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sg_status_chamado" id="CBFE3075-15A6-BC85-A410-3B9D04564DCE">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status do chamado: ativo (A), inativo (I) ou pendente (P)]]></commentInRDBMS>
+<generatorID>8544060A-0399-A442-6B99-22AC48314EB3</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="indice_satisfacao" id="9181DFBC-5424-0098-C18C-A2D41168364E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Índice de satisfação atribuído pelo cliente]]></commentInRDBMS>
+<generatorID>C1208CDE-3ECA-3278-FCB3-836B3E3B5765</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_hr_atend" id="D2DA693C-4010-90EB-7394-10C3AF7AD79C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do atendimento do chamado]]></commentInRDBMS>
+<generatorID>3236016C-4243-C81A-CD02-8EBA85EE59E2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62621002-39C6-3898-015D-1FA28F355F7D" name="PK_SAC">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>80A4BB63-9099-717C-0BCA-7A0001318239</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12816C0B-998F-56C3-1160-833E2D01C191"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE1CC7F2-339D-A730-1500-3EF4A3F5FE24" name="abrir">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>17505352-29D3-1280-6112-F4555A54D6E1</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BC2D73F-6C68-597A-2EF1-9AF6CAEE27D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BF59590-42F1-733E-E5A5-6C9B576B9975" name="atender">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>CAC8FABA-133E-DE36-C75D-236BD501EADC</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="160E6D2E-5473-66FC-0B64-906BDBF194D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_MC_SAC_CHAMADO_STATUS" directorySegmentName="seg_0" id="4E6CB895-D0AB-3952-4665-2452A5F59FC4">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 22:34:38 UTC</createdTime>
+<ownerDesignName>versao_1.8</ownerDesignName>
+<rule><![CDATA[sg_status_chamado = 'A' OR sg_status_chamado = 'E' OR sg_status_chamado = 'C' OR sg_status_chamado = 'F' OR sg_status_chamado = 'X']]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_MC_SAC_CHAMADO_IDC_STF" directorySegmentName="seg_0" id="56F37C02-92D8-1BC2-4FA0-951A03154299">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 22:59:30 UTC</createdTime>
+<ownerDesignName>versao_1.8</ownerDesignName>
+<rule><![CDATA[indice_satisfacao IS NULL OR indice_satisfacao BETWEEN 1 AND 10]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_MC_SAC_CHAMADO_CLASS_TIPO" directorySegmentName="seg_0" id="CEB42664-DD9A-856B-C3E3-CC5A06C0CA21">
+<createdBy>luana</createdBy>
+<createdTime>2024-03-13 23:03:46 UTC</createdTime>
+<ownerDesignName>versao_1.8</ownerDesignName>
+<rule><![CDATA[cd_tipo_chamado = 'A' OR cd_tipo_chamado = 'R' OR cd_tipo_chamado = 'S']]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

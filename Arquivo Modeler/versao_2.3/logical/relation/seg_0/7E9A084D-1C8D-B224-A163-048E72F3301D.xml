@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="visualizar" directorySegmentName="seg_0" id="7E9A084D-1C8D-B224-A163-048E72F3301D">
+<createdBy>Gianluca Giudici</createdBy>
+<createdTime>2024-03-12 01:02:13 UTC</createdTime>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<engineerTo>
+<item key="69AC88BB-C58E-C04C-FD20-D2652A418E6E" value="true"/>
+</engineerTo>
+<sourcePk>2E6BD251-98EE-59B1-9007-D51C5356D2A0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B5A032B-333F-78C6-4446-421BC7C129D0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8935A0AA-BBC0-D74A-5CAE-4E0E8F363E07</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99898831-D782-6D52-63F4-AA98C5D9B511" name="MC_CLIENTE_PJ">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>46DAF012-AFFC-EF31-33E4-222A57C3B919</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="6D65D0EB-EEDF-4FA1-8FC1-594D53EA9893">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Código do cliente]]></commentInRDBMS>
+<generatorID>0F9D0BB4-D1EE-4263-D56E-2AEA7C9A3081</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EAEB803-E1CB-3FDF-199C-BA82E7DE2E85" referredColumn="BEC36DBD-951C-15DC-AC0E-24DB83AFF164"/>
+</associations>
+</Column>
+<Column name="nr_cnpj" id="B5690EDF-5058-E1F3-28E5-B4FC0D11024C">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número do CNPJ do cliente pessoa jurídica]]></commentInRDBMS>
+<generatorID>A768B3FE-5741-0F7B-6C65-043833EE1E1D</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_fundacao" id="4C26C425-FACB-BA4C-8C9F-035DF824F02E">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de fundação da empresa do cliente pessoa jurídica]]></commentInRDBMS>
+<generatorID>7E7F0000-8D5C-C5E3-941B-147A2B397B05</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_inscricao_estadual" id="31DD447D-8D5E-DE16-9F7A-7E731858951D">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de inscrição estadual da empresa do cliente pessoa jurídica]]></commentInRDBMS>
+<generatorID>390AC4FB-9825-2325-6FAF-36A7417A8846</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<ownDataTypeParameters>,20,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F11EBCD-B474-5D3C-63A2-4B642C58733F" name="PK_CLIENTE_PJ">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>CB2846B7-2416-8B24-D38E-277FEA41CB0B</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D65D0EB-EEDF-4FA1-8FC1-594D53EA9893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2FE973A4-92F1-CDBE-1707-1DDC80718605" name="pode_serv2">
+<createdBy>Juan</createdBy>
+<createdTime>2024-03-13 00:54:23 UTC</createdTime>
+<generatorID>F2D6C0A0-E8C9-EB70-78C3-254389339CD2</generatorID>
+<ownerDesignName>versao_2.3</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D65D0EB-EEDF-4FA1-8FC1-594D53EA9893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
